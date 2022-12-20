@@ -10,17 +10,13 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
   </header>
   <RouterView />
+  <notifications group="main" />
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav {
@@ -54,11 +50,6 @@ nav a:first-of-type {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
 
   nav {
     text-align: left;
